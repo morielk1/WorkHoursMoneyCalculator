@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Hours Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card rate-card">
+            <label>Hourly Rate (₪)</label>
+            <div class="rate-input-group">
+                <input type="number" id="hourlyRate" step="0.01" value="34.32">
+                <button id="saveRate" class="btn-text">Save</button>
+            </div>
+        </div>
+
+        <div class="card input-card">
+            <label>Work Hours</label>
+            <div class="time-input-group">
+                <input type="text" id="startTime" placeholder="9:00">
+                <span class="arrow">→</span>
+                <input type="text" id="endTime" placeholder="17:00">
+            </div>
+            <div class="button-group">
+                <button id="calculate" class="btn-primary">Calculate</button>
+                <button id="reset" class="btn-secondary">Reset All</button>
+            </div>
+        </div>
+
+        <div class="card result-card">
+            <div id="result">Hours Worked:</div>
+            <div id="total" class="total">Monthly Total: 0:00 = 0.00₪</div>
+        </div>
+
+        <h2>Work History</h2>
+        <div id="history"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
